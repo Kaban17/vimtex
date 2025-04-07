@@ -2,6 +2,8 @@ local options = { noremap = true, silent = true }
 local map = vim.keymap.set
 map("n", ";", ":")
 map("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
+map("n", "<C-n>", "<Cmd>Neotree focus<CR>", { desc = "Focus Neotree" })
+map("n", "<leader>ef", "<Cmd>Neotree reveal<CR>", { desc = "Reveal file in Neotree" })
 map("n", "<leader>ft", "<Cmd>TodoTelescope<CR>", { desc = "Find TODOs" })
 map("n", "<leader>ff", "<Cmd>Telescope find_files<CR>", { desc = "Find files" })
 map("n", "<leader>fr", "<Cmd>Telescope oldfiles<CR>", { desc = "Recent files" })
@@ -61,7 +63,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- Diagnostic keybindings
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
     vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
-    vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
+    vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, opts)
     vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
   end,
 })
