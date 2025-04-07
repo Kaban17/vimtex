@@ -4,7 +4,7 @@
 
 ## Leader Key
 
-The leader key in this configuration is set to the default `\` (backslash). Most custom keybindings use this leader key as a prefix.
+The leader key in this configuration is set to the default ` ` (space). Most custom keybindings use this leader key as a prefix.
 
 ## General Keymaps
 
