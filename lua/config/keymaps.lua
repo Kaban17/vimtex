@@ -3,7 +3,7 @@ local map = vim.keymap.set
 map("n", ";", ":")
 map("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
 map("n", "<C-n>", "<Cmd>Neotree focus<CR>", { desc = "Focus Neotree" })
-map("n", "<leader>ef", "<Cmd>Neotree reveal<CR>", { desc = "Reveal file in Neotree" })
+map("n", "<leader>r", "<Cmd>Neotree reveal<CR>", { desc = "Reveal file in Neotree" })
 map("n", "<leader>ft", "<Cmd>TodoTelescope<CR>", { desc = "Find TODOs" })
 map("n", "<leader>ff", "<Cmd>Telescope find_files<CR>", { desc = "Find files" })
 map("n", "<leader>fr", "<Cmd>Telescope oldfiles<CR>", { desc = "Recent files" })

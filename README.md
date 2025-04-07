@@ -13,7 +13,7 @@ The leader key in this configuration is set to the default ` ` (space). Most cus
 | `;` | Enter command mode (`:`) |
 | `<leader>e` | Toggle Neotree file explorer |
 | `<C-n>` | Focus Neotree (without toggling) |
-| `<leader>ef` | Reveal current file in Neotree |
+| `<leader>r` | Reveal current file in Neotree |
 | `<leader>ft` | Find TODOs with Telescope |
 | `<leader>ff` | Find files with Telescope |
 | `<leader>fr` | Browse recent files |
