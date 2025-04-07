@@ -2,6 +2,28 @@
 
 # Neovim Configuration
 
+## Leader Key
+
+The leader key in this configuration is set to the default `\` (backslash). Most custom keybindings use this leader key as a prefix.
+
+## General Keymaps
+
+| Keybinding | Description |
+|------------|-------------|
+| `;` | Enter command mode (`:`) |
+| `<leader>e` | Toggle Neotree file explorer |
+| `<leader>ft` | Find TODOs with Telescope |
+| `<leader>ff` | Find files with Telescope |
+| `<leader>fr` | Browse recent files |
+| `<leader>fs` | Find string in current working directory |
+| `<leader>fc` | Find string under cursor |
+| `<Tab>` | Move to next buffer |
+| `<S-Tab>` | Move to previous buffer |
+| `<leader>bd` | Delete current buffer |
+| `<leader>br` | Delete buffers to the right |
+| `<leader>bb` | Switch to other buffer |
+| `jk` | Escape from insert mode |
+
 ## LSP Keybindings
 
 This configuration includes LSP support for Python, C/C++, Rust, and Golang. The following standard LSP keybindings are available:
