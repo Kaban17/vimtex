@@ -1,6 +1,21 @@
 vim.g.mapleader = " "
 vim.g.maplocaleader = " "
-vim.o.clipboard = "unnamedplus"
+
+-- Clipboard configuration
+vim.opt.clipboard = "unnamedplus"   -- Use system clipboard
+vim.g.clipboard = {
+  name = 'xclip-custom',
+  copy = {
+    ["+"] = 'xclip -selection clipboard',
+    ["*"] = 'xclip -selection clipboard',
+  },
+  paste = {
+    ["+"] = 'xclip -selection clipboard -o',
+    ["*"] = 'xclip -selection clipboard -o',
+  },
+  cache_enabled = 1,
+}
+
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.signcolumn = "yes"
