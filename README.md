@@ -26,6 +26,17 @@ The leader key in this configuration is set to the default ` ` (space). Most cus
 | `<leader>bb` | Switch to other buffer |
 | `jk` | Escape from insert mode |
 
+## Clipboard Operations
+
+| Keybinding | Description |
+|------------|-------------|
+| `<leader>y` | Copy to system clipboard |
+| `<leader>Y` | Copy line to system clipboard |
+| `<leader>p` | Paste from system clipboard |
+| `<leader>P` | Paste from system clipboard before cursor |
+| `<leader>y` (visual mode) | Copy selection to system clipboard |
+| `<leader>p` (visual mode) | Paste from system clipboard |
+
 ## LSP Keybindings
 
 This configuration includes LSP support for Python, C/C++, Rust, and Golang. The following standard LSP keybindings are available:
